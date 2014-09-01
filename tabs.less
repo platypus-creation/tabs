@@ -1,0 +1,65 @@
+@tabs-color: #069;
+.tabbable {
+    .tabs {
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-bottom: 0.5em solid @tabs-color;
+        >li {
+            flex-shrink: 1;
+            flex-grow: 0;
+            margin: 0 0.5em 0 0;
+            padding: 0;
+            display: inline-block;
+            border-bottom: none;
+            &.pull-right {
+                margin: 0 0 0 auto;
+            }
+            >* {
+                font-size: 16px;
+                line-height: 40px;
+                color: rgba(0,0,0,0.4);
+                background: lighten(@tabs-color, 5%);
+                padding: 0 1em;
+                display: block;
+                border-radius: 0.25em 0.25em 0 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &:hover {
+                >* {
+                    text-decoration: none;
+                    color: rgba(0,0,0,0.5);
+                    background: lighten(@tabs-color, 3%);
+                }
+            }
+            &.active {
+                >* {
+                    background: @tabs-color;
+                    color: rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
+    
+    .tab-content {
+        overflow: visible;
+        margin: 0;
+        >*:first-child {
+            margin-top: 0;
+        }
+        >*:last-child {
+            margin-bottom: 0;
+        }
+        >.tab-pane {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+}

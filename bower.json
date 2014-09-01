@@ -1,0 +1,21 @@
+{
+  "name": "tabs",
+  "main": "tabs.js",
+  "version": "1.0.0",
+  "authors": [
+    "Guillaume Esquevin <guillaume.esquevin@platypus-creation.com>"
+  ],
+  "description": "Tabs & pane directives for angularjs",
+  "keywords": [
+    "angularjs",
+    "tabs",
+    "pane",
+    "lazy"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ]
+}
