@@ -39,7 +39,7 @@ tabs {
                 }
             }
             &.active {
-                >* {
+                >a {
                     background: @tabs-color;
                     color: rgba(0,0,0,0.8);
                 }
@@ -48,14 +48,6 @@ tabs {
     }
     
     .tab-content {
-        // overflow: visible;
-        // margin: 0;
-        // >*:first-child {
-        //     margin-top: 0;
-        // }
-        // >*:last-child {
-        //     margin-bottom: 0;
-        // }
         >pane >.tab-pane {
             display: none;
             &.active {

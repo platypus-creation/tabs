@@ -24,4 +24,20 @@ Tabs & Pane directives for angular
         [...]
     </tabs>
 
+### Features
 
+#### Lazy loading
+
+Tab content is only loaded when tab is visible, and discarded as soon as tab is left, ensuring you are not requesting precious resources for nothing
+
+#### URL sync
+
+Current tab is synced into the URL's anchor, so that a refresh, copy/pasting of the URL will bring you back to the proper tab.
+
+You should be using HTML5 mode for location :
+
+    $locationProvider.html5Mode(true);
+    
+#### Text ellipsis
+
+Using flexbox, the tabs tries to adjust themselves in regard to the available space, truncating text whenever needed.

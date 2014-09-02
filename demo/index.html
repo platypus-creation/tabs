@@ -20,7 +20,11 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js" type="text/javascript" charset="utf-8"></script>
         <script src="../tabs.js" type="text/javascript" charset="utf-8"></script>
         <script>
-            var app = angular.module('platypus.tabs.demo', ['platypus.tabs']);
+            var app = angular.module('platypus.tabs.demo', [
+            'platypus.tabs'
+            ]).config(function($locationProvider){
+                $locationProvider.html5Mode(true);
+            });
         </script>
     </body>
 </html>
