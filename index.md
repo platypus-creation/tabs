@@ -66,17 +66,6 @@ Code:
 - Include `tabs.js` and `tabs.css` into your app.
 - Add platypus.tabs as a module dependency to your app : `angular.module('YOUR_APP', ['platypus.tabs'])`
 
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js" type="text/javascript" charset="utf-8"></script>
-<script src="../tabs.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var app = angular.module('platypus.tabs.demo', [
-    'platypus.tabs'
-    ]).config(function($locationProvider){
-        $locationProvider.html5Mode(true);
-    });
-</script>
-
 ### Features
 
 #### Lazy loading
@@ -94,3 +83,12 @@ You should be using HTML5 mode for location :
 #### Text ellipsis
 
 Using flexbox, the tabs tries to adjust themselves in regard to the available space, truncating text whenever needed.
+
+
+<script>
+    var app = angular.module('platypus.tabs.demo', [
+    'platypus.tabs'
+    ]).config(function($locationProvider){
+        $locationProvider.html5Mode(true);
+    });
+</script>
