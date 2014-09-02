@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="platypus.tabs.demo">
+    <head>
+        <link rel="stylesheet" href="../tabs.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <tabs>
+            <pane title="<i class='fa fa-cogs'></i> Pane title 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </pane>
+            <pane title="Pane title 2">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </pane>
+        </tabs>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../tabs.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var app = angular.module('platypus.tabs.demo', ['platypus.tabs']);
+        </script>
+    </body>
+</html>

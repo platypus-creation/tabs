@@ -1,4 +1,4 @@
-.tabbable .tabs {
+tabs .nav-tabs {
   overflow: auto;
   margin: 0;
   padding: 0;
@@ -14,9 +14,9 @@
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  border-bottom: 0.5em solid #006699;
+  border-bottom: 0.5em solid #dddddd;
 }
-.tabbable .tabs > li {
+tabs .nav-tabs > li {
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
@@ -29,43 +29,33 @@
   display: inline-block;
   border-bottom: none;
 }
-.tabbable .tabs > li.pull-right {
+tabs .nav-tabs > li.pull-right {
   margin: 0 0 0 auto;
 }
-.tabbable .tabs > li > * {
-  font-size: 16px;
-  line-height: 40px;
+tabs .nav-tabs > li > a {
+  line-height: 2;
   color: rgba(0, 0, 0, 0.4);
-  background: #0077b3;
+  background: #eaeaea;
   padding: 0 1em;
   display: block;
   border-radius: 0.25em 0.25em 0 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 }
-.tabbable .tabs > li:hover > * {
+tabs .nav-tabs > li:hover > a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
-  background: #0070a8;
+  background: #e5e5e5;
 }
-.tabbable .tabs > li.active > * {
-  background: #006699;
+tabs .nav-tabs > li.active > * {
+  background: #dddddd;
   color: rgba(0, 0, 0, 0.8);
 }
-.tabbable .tab-content {
-  overflow: visible;
-  margin: 0;
-}
-.tabbable .tab-content > *:first-child {
-  margin-top: 0;
-}
-.tabbable .tab-content > *:last-child {
-  margin-bottom: 0;
-}
-.tabbable .tab-content > .tab-pane {
+tabs .tab-content > pane > .tab-pane {
   display: none;
 }
-.tabbable .tab-content > .tab-pane.active {
+tabs .tab-content > pane > .tab-pane.active {
   display: block;
 }

@@ -23,5 +23,5 @@ Tabs & Pane directives for angular
         </pane>
         [...]
     </tabs>
-    
+
 
