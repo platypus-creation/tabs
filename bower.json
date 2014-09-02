@@ -12,6 +12,10 @@
     "pane",
     "lazy"
   ],
+  "main": [
+      "./tabs.css",
+      "./tabs.js"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
